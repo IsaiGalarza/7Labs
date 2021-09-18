@@ -159,8 +159,8 @@ export default function Homepage() {
       <div ref={el => scrTargetArr.current[3] = el} className="connect-section">
         <Container>
           <p className="title">CONNECT</p>
-          <img src={Twitter} className="p-5" alt={"twitter"} />
-          <img src={Discord} className="p-5" alt={"discord"} />
+          <a href='https://discord.gg/WmUGgxbS'><img src={Twitter} className="p-5" alt={"twitter"} /></a>
+          <a href='https://twitter.com/7LabsNFT'><img src={Discord} className="p-5" alt={"discord"} /></a>
         </Container>
       </div>
     </div>

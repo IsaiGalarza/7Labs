@@ -63,8 +63,8 @@ export default function SadBear() {
         <div className="connect-link">
           <p className="connect-link-title">CONNECT</p>
           <div className="connect-group">
-            <img src={Discord} className="link-icon" alt={"discord"} />
-            <img src={Twitter} className="link-icon" alt={"twitter"} />
+            <a href='https://discord.gg/WmUGgxbS'><img src={Discord} className="link-icon" alt={"discord"} /></a>
+            <a href='https://twitter.com/solhanabears'><img src={Twitter} className="link-icon" alt={"twitter"} /></a>
           </div>
         </div>
       </div>
