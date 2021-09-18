@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./sadBear.scss";
 import BearHeader from "../../components/bearHeader/bearHeader";
 import LongArrow from "../../image/long-arrow.svg";
@@ -6,9 +6,13 @@ import ShortArrow from "../../image/short-arrow.svg";
 import ConnectBear from "../../image/bear7.png";
 import Twitter from "../../image/twitter.png";
 import Discord from "../../image/discord.png";
-import SecondCloud from '../../image/bottom_rain.png'
+import SecondCloud from "../../image/bottom_rain.png";
 
 export default function SadBear() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="sad-bear">
       <BearHeader />
@@ -24,14 +28,18 @@ export default function SadBear() {
             Nulla consequat massa quis enim.
           </p>
           <button className="connect-button">CONNECT WALLET TO BUY</button>
-          <p className='counter-placeholder'>0/10000 Sad Bears sold</p>
+          <p className="counter-placeholder">0/10000 Sad Bears sold</p>
           <img src={LongArrow} alt={"long-arrow"} className="title-arrow" />
         </div>
         <div className="bear-image-section">
           <p className="road-map-title">ROAD MAP</p>
         </div>
         <div className="second-cloud-wrapper position-relative">
-            <img src={SecondCloud} alt="RAIN" className="second-cloud position-absolute w-100" />
+          <img
+            src={SecondCloud}
+            alt="RAIN"
+            className="second-cloud position-absolute w-100"
+          />
           <div className="road-map-content-wrapper">
             <p className="road-map-mobile-title">ROAD MAP</p>
             <p className="road-map-content">
@@ -43,7 +51,7 @@ export default function SadBear() {
               in which a person's voting power is determined by the number of
               7Labs NFTs within that person's wallet.
             </p>
-            <img src={LongArrow} alt={"long-arrow"} className='roadmap-arrow'/>
+            <img src={LongArrow} alt={"long-arrow"} className="roadmap-arrow" />
           </div>
         </div>
       </div>
@@ -61,7 +69,7 @@ export default function SadBear() {
         </div>
       </div>
 
-      <p className='rarities-mobile-title'>RARITIES</p>
+      <p className="rarities-mobile-title">RARITIES</p>
 
       <div className="rarities-section">
         <div className="midline"></div>

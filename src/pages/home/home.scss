@@ -42,12 +42,8 @@
             margin-bottom: 50px;
         }
         .sad-bears-wrapper {
-            background-image: url('../../image/sad-bears.png');
             background-color: #181818;
             height: 668px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
             text-align: center;
             position: relative;
             .single-bear {
@@ -201,6 +197,9 @@
         }
         .sad-bears-section {
             .collect-button {
+                display: none;
+            }
+            .sad-bears {
                 display: none;
             }
             .single-bear {
